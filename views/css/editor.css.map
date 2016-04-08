@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAII,8BAAG,CACC,UAAU,CAAC,CAAC,CAEhB,4DAAgC,CAC5B,MAAM,CAAG,cAAiC,CAC1C,aAAa,CAAG,IAAI,CAGpB,gDAAG,CACC,UAAU,CAAC,CAAC,CAEhB,gDAAG,CACC,OAAO,CAAC,CAAC",
+"sources": ["../scss/editor.scss"],
+"names": [],
+"file": "editor.css"
+}
