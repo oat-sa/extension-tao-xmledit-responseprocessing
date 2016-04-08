@@ -17,7 +17,7 @@
  * Copyright (c) 2016 (original work) Open Assessment Technologies SA;
  *
  */
-namespace oat\xmlEditQtiDebugger\scripts\update;
+namespace oat\xmlEditRp\scripts\update;
 use \common_ext_ExtensionUpdater;
 
 /**

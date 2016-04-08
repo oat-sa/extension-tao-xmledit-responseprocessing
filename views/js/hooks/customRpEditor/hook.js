@@ -181,7 +181,7 @@ define([
                 },
                 validate : function(value, callback){
                     $.ajax({
-                        url : helpers._url('validate', 'CustomRpEditor', 'xmlEdit'),
+                        url : helpers._url('validate', 'CustomRpEditor', 'xmlEditRp'),
                         type : 'POST',
                         contentType : 'text/xml',
                         dataType : 'json',

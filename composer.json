@@ -17,7 +17,7 @@
         "GPL-2.0"
     ],
     "extra" : {
-        "tao-extension-name" : "xmlEdit"
+        "tao-extension-name" : "xmlEditRp"
     },
     "minimum-stability" : "dev",
     "require": {
@@ -25,7 +25,7 @@
     },
     "autoload" : {
         "psr-4" : {
-            "oat\\xmlEdit\\" : ""
+            "oat\\xmlEditRp\\" : ""
         }
     } 
 }
