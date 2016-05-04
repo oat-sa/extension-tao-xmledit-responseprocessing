@@ -23,7 +23,7 @@ return array(
 	'label' => 'xmlEditRp',
 	'description' => 'xml editing and debugging tools',
     'license' => 'GPL-2.0',
-    'version' => '0.1.0',
+    'version' => '0.2.0',
 	'author' => 'Open Assessment Technologies SA',
 	'requires' => array(
         'xmlEdit' => '>=1.0.0',
