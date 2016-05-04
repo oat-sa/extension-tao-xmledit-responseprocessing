@@ -27,7 +27,7 @@ return array(
 	'author' => 'Open Assessment Technologies SA',
 	'requires' => array(
         'xmlEdit' => '>=1.0.0',
-        'taoQtiItem' => '>=2.11.0'
+        'taoQtiItem' => '>=2.27.0'
     ),
     'acl' => array(
         array('grant', 'http://www.tao.lu/Ontologies/TAOItem.rdf#QTIManagerRole', array('ext'=>'xmlEditRp')),
