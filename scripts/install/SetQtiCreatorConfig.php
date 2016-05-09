@@ -16,31 +16,21 @@
  *
  * Copyright (c) 2016 (original work) Open Assessment Technologies SA;
  *
+ *
  */
-namespace oat\xmlEditRp\scripts\update;
-use \common_ext_ExtensionUpdater;
+
+namespace pcgroupUs\pcgAuth\scripts\install;
+
+use common_ext_action_InstallAction;
 use oat\taoQtiItem\model\QtiCreatorClientConfigRegistry;
 
-/**
- * Update script of the Extension
- * @author Sam <sam@taotesting.com>
- */
-class Updater extends common_ext_ExtensionUpdater
+class SetQtiCreatorConfig extends common_ext_action_InstallAction
 {
-
-    /**
-     *
-     * @param string $initialVersion
-     * @return string $versionUpdatedTo
-     */
-    public function update($initialVersion)
+    public function __invoke($params)
     {
-        if($this->isVersion('0.1.0')){
-            $registry = QtiCreatorClientConfigRegistry::getRegistry();
-            $registry->registerPlugin('xmlResponseProcessing', 'xmlEditRp/qtiCreator/plugins/panel/xmlResponseProcessing', 'panel');
-            $this->setVersion('0.2.0');
-        }
+        $registry = QtiCreatorClientConfigRegistry::getRegistry();
+        $registry->registerPlugin('xmlResponseProcessing', 'xmlEditRp/qtiCreator/plugins/panel/xmlResponseProcessing', 'panel');
+
+        return new \common_report_Report(\common_report_Report::TYPE_SUCCESS, 'Plugins added to the creator\'s configuration');
     }
-
-
 }
