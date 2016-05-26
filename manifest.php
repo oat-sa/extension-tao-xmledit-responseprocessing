@@ -35,7 +35,7 @@ return array(
     ),
     'install' => array(
         'php' => array(
-            'oat\\xmlEditRp\\scripts\\install\\SetQtiCreatorConfig.php'
+            'oat\\xmlEditRp\\scripts\\install\\SetQtiCreatorConfig'
         )
     ),
     'uninstall' => array(),
