@@ -19,7 +19,7 @@
  *
  */
 
-namespace pcgroupUs\pcgAuth\scripts\install;
+namespace oat\xmlEditRp\scripts\install;
 
 use common_ext_action_InstallAction;
 use oat\taoQtiItem\model\QtiCreatorClientConfigRegistry;
