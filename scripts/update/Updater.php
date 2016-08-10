@@ -18,10 +18,12 @@
  *
  */
 namespace oat\xmlEditRp\scripts\update;
+
 use \common_ext_ExtensionUpdater;
+use oat\taoQtiItem\model\QtiCreatorClientConfigRegistry;
 
 /**
- *
+ * Update script of the Extension
  * @author Sam <sam@taotesting.com>
  */
 class Updater extends common_ext_ExtensionUpdater
@@ -36,6 +38,13 @@ class Updater extends common_ext_ExtensionUpdater
     {
         $this->setVersion($initialVersion);
 
+        if($this->isVersion('0.1.0')){
+            $registry = QtiCreatorClientConfigRegistry::getRegistry();
+            $registry->registerPlugin('xmlResponseProcessing', 'xmlEditRp/qtiCreator/plugins/panel/xmlResponseProcessing', 'panel');
+            $this->setVersion('0.2.0');
+        }
+
+        $this->skip('0.2.0', '0.3.0');
     }
 
 
