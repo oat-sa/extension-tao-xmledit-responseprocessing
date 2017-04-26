@@ -23,7 +23,7 @@ return array(
     'label' => 'xmlEditRp',
     'description' => 'xml editing and debugging tools',
     'license' => 'GPL-2.0',
-    'version' => '0.3.0',
+    'version' => '1.0.0',
 	'author' => 'Open Assessment Technologies SA',
 	'requires' => array(
         'xmlEdit' => '>=1.1.0',
@@ -49,9 +49,6 @@ return array(
 
         #BASE URL (usually the domain root)
         'BASE_URL' => ROOT_URL.'xmlEditRp/',
-
-        #BASE WWW required by JS
-        'BASE_WWW' => ROOT_URL.'xmlEditRp/views/'
     ),
     'extra' => array(
         'structures' => dirname(__FILE__).DIRECTORY_SEPARATOR.'controller'.DIRECTORY_SEPARATOR.'structures.xml',
