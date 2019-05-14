@@ -26,7 +26,7 @@ define([
     'tpl!xmlEditRp/qtiCreator/plugins/panel/tpl/dialog',
     'tpl!xmlEditRp/qtiCreator/plugins/panel/tpl/notification',
     'taoQtiItem/qtiCreator/helper/xmlRenderer',
-    'core/validator/Validator',
+    'ui/validator/Validator',
     'css!xmlEditRpCss/editor'
 ], function($, _, __, pluginFactory, helpers, xmlEditor, buttonTpl, dialogTpl, notificationTpl, xmlRenderer, Validator) {
     'use strict';
