@@ -25,6 +25,7 @@ use oat\taoQtiItem\model\QtiCreatorClientConfigRegistry;
 /**
  * Update script of the Extension
  * @author Sam <sam@taotesting.com>
+ * @deprecated use migrations instead. See https://github.com/oat-sa/generis/wiki/Tao-Update-Process
  */
 class Updater extends common_ext_ExtensionUpdater
 {
@@ -45,5 +46,10 @@ class Updater extends common_ext_ExtensionUpdater
         }
 
         $this->skip('0.2.0', '1.1.0');
+        
+        //Updater files are deprecated. Please use migrations.
+        //See: https://github.com/oat-sa/generis/wiki/Tao-Update-Process
+
+        $this->setVersion($this->getExtension()->getManifest()->getVersion());
     }
 }
