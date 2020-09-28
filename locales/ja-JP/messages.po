@@ -1,0 +1,42 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: TAO 3.4.0-sprint117\n"
+"PO-Revision-Date: 2020-09-22T16:02:17\n"
+"Last-Translator: TAO Translation Team <translation@tao.lu>\n"
+"MIME-Version: 1.0\n"
+"Language: ja-JP\n"
+"sourceLanguage: en-US\n"
+"targetLanguage: ja-JP\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ../../\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: .\n"
+
+msgid "Edit Processing Rule"
+msgstr ""
+
+msgid "Edit Processing Rules"
+msgstr ""
+
+msgid "invalid qti xml"
+msgstr ""
+
+msgid "Invalid QTI xml %s"
+msgstr ""
+
+msgid "Invalid Response Processing"
+msgstr ""
+
+msgid "Missing root node <responseProcessing>"
+msgstr ""
+
+msgid "The variable %s does not exist."
+msgstr ""
+
+msgid "variable missing"
+msgstr ""
+
+msgid "wrong xml"
+msgstr ""
+
