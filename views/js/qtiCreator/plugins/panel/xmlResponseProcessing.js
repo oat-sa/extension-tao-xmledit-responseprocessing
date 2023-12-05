@@ -102,7 +102,7 @@ define([
                     var r = variablesExist(item, xml);
                     var valid = !r.missing.length;
                     if(!valid){
-                        _.each(r.missing, function(m){
+                        _.forEach(r.missing, function(m){
                             messages.push(__('The variable %s does not exist.', m));
                         });
                     }
@@ -125,7 +125,7 @@ define([
                     }).done(function(r){
                         var valid = r.success;
                         if(!valid){
-                            _.each(r.errors, function(err){
+                            _.forEach(r.errors, function(err){
                                 messages.push(__('Invalid QTI xml %s', err.message || err));
                             });
                         }
